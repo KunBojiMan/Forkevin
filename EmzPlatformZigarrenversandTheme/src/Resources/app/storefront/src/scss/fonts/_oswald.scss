@@ -1,0 +1,39 @@
+/* oswald-light - latin */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local(''),
+         url('#{$sw-asset-public-url}/bundles/emzplatformzigarrenversandtheme/font/Oswald/Oswald-Light.ttf') format('truetype'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+/* oswald-regular - latin */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+         url('#{$sw-asset-public-url}/bundles/emzplatformzigarrenversandtheme/font/Oswald/Oswald-Regular.ttf') format('truetype'),
+}
+
+/* oswald-medium - latin */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local(''),
+         url('#{$sw-asset-public-url}/bundles/emzplatformzigarrenversandtheme/font/Oswald/Oswald-Medium.ttf') format('truetype'),
+}
+
+/* oswald-bold - latin */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(''),
+         url('#{$sw-asset-public-url}/bundles/emzplatformzigarrenversandtheme/font/Oswald/Oswald-Bold.ttf') format('truetype'),
+}

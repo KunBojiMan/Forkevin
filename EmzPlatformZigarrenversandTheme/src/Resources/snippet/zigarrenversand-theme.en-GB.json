@@ -1,0 +1,19 @@
+{
+    "zigarrenversand-theme": { 
+        "emz-top-bar": {
+            "delivery": "Free shipping from 50 CHF",
+            "trending": "Actions",
+            "info": "About us",
+            "new": "New Products",
+            "phone": "Hotline 052. 624 26 00",
+            "service": "Service/Help"
+        },
+        "emz-header" :{
+            "searchPlaceholder":"Search..."
+        },
+        "emz-footer-icon-bar": {
+            "payment-in-advance":"PAYMENT IN ADVACNE",
+            "invoice": "INVOICE"
+        }
+    }
+}

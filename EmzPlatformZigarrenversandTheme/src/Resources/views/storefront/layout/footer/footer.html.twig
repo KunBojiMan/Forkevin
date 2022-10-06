@@ -1,0 +1,48 @@
+{% sw_extends "@Storefront/storefront/layout/footer/footer.html.twig" %}
+
+{% block layout_footer_inner_container %}
+
+	{% block layout_footer_top_bar %}
+		<div class="emz-footer wrapper">
+			<div class="container emz-footer-one">
+				<div class=" col-lg-6 col-md-12 d-flex justify-content-between emz-payment align-items-center emz-footer-logo">
+					<span class="emz-footer-icon-item text ">{{ "zigarrenversand-theme.emz-footer-icon-bar.payment-in-advance"|trans|sw_sanitize }}</span>
+					    <span class="emz-footer-icon-item">{% sw_icon 'visa' style { 'pack': 'EmzIcons'} %}</span>
+					    <span class="emz-footer-icon-item">{% sw_icon 'mastercard' style { 'pack': 'EmzIcons'} %}</span>
+					<span class="emz-footer-icon-item">{% sw_icon 'american-express' style { 'pack': 'EmzIcons'} %}</span>
+				</div>
+			</div>
+			<div class="container emz-footer-two">
+				<div class=" col-lg-6 col-md-12 d-flex justify-content-between emz-payment align-items-center emz-footer-logo">
+					<span class="emz-footer-icon-item text">{{ "zigarrenversand-theme.emz-footer-icon-bar.invoice"|trans|sw_sanitize }}</span>
+					    <span class="emz-footer-icon-item">{% sw_icon 'twint' style { 'pack': 'EmzIcons'} %}</span>
+					    <span class="emz-footer-icon-item">{% sw_icon 'post-finance' style { 'pack': 'EmzIcons'} %}</span>
+					<span class="emz-footer-icon-item">{% sw_icon 'die-post' style { 'pack': 'EmzIcons'} %}</span>
+				</div>
+			</div>
+		</div>
+	{% endblock %}
+	{% block layout_footer_bottom %}
+		{{ parent() }}
+		<div class="footer-vat">
+			{% if context.taxState == "gross" %}
+				<p>
+					{{ "footer.includeVat"|trans({
+                            '%url%': path('frontend.cms.page',{ id: config('core.basicInformation.shippingPaymentInfoPage') })
+                        })|raw }}
+				</p>
+			{% else %}
+				<p>
+					{{ "footer.excludeVat"|trans({
+                            '%url%': path('frontend.cms.page',{ id: config('core.basicInformation.shippingPaymentInfoPage') })
+                        })|raw }}
+				</p>
+			{% endif %}
+		</div>
+	{% endblock %}
+{% endblock %}
+
+{% block layout_footer_payment_logos %}{% endblock %}
+{% block layout_footer_payment_shipping_logos %}{% endblock %}
+{% block layout_footer_vat %}{% endblock %}
+{% block layout_footer_copyright %}{% endblock %}

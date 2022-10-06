@@ -1,0 +1,21 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_header %}
+	<header class="header-main position-sticky">
+		{% block base_header_inner %}
+			<div id="sticky-header">
+				{% sw_include '@Storefront/storefront/layout/header/header.html.twig' %}
+			</div>
+		{% endblock %}
+	</header>
+{% endblock %}
+
+{% block base_navigation %}
+	<div class="nav-main">
+		<div class="container-fluid emz-nav-main">
+			{% block base_navigation_inner %}
+				{% sw_include '@Storefront/storefront/layout/navigation/navigation.html.twig' %}
+			{% endblock %}
+		</div>
+	</div>
+{% endblock %}

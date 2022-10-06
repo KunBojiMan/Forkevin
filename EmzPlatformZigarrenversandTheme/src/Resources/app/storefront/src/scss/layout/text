@@ -1,0 +1,25 @@
+EmzPlatformZigarrenversandTheme/src/Resources/views/storefront/layout/navigation/navigation.html.twig #29
+Kleinere Blöcke überschreiben -> überall
+
+
+EmzPlatformZigarrenversandTheme/src/Resources/views/storefront/layout/header/top-bar.html.twig
+bessere Formatierung
+nicht abstände wechseln
+
+scss
+sowas wie a,fonts,font-size
+formatierung -> _breadcrumbs.scss
+Farben entfernen
+fontsize in rem
+more scss style
+!important nicht so gut
+verwendete Klassennamen Fehleranfällig
+
+absolute werte überflüssig in top bar
+
+topbar icons upload über theme.json
+
+Warenkorb zeigt die Anzahl nicht an -> nur Mobile & da passt die Badge nicht
+
+Home Icon leuchten wenn aktiv
+Navigation hüpft bei Hover wenn keine kategorie aktiv

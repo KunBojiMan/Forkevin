@@ -1,0 +1,138 @@
+.icon.icon-EmzIcons.icon-EmzIcons-delivery {
+    color: $emz-light-brown;
+    width: 1.5625rem;
+}
+
+.icon.icon-EmzIcons.icon-EmzIcons-trending {
+    width: 1rem;
+    margin-bottom: .375rem;
+    color: $emz-light-brown;
+}
+
+.icon.icon-EmzIcons.icon-EmzIcons-info {
+    width: 1.1875rem;
+    margin-bottom: .375rem;
+    color: $emz-light-brown;
+}
+
+.icon.icon-EmzIcons.icon-EmzIcons-new {
+    width: 1.1875rem;
+    margin-bottom: .375rem;
+    color: $emz-light-brown;
+}
+
+.emz-top-bar-item.phone {
+    color: $emz-light-brown;
+}
+
+.icon.icon-EmzIcons.icon-EmzIcons-phone {
+    width: 1rem;
+    color: $emz-light-brown;
+}
+
+.icon.icon-EmzIcons.icon-EmzIcons-service {
+    width: 1.1875rem;
+    margin-bottom: .375rem;
+    color: $emz-light-brown;
+}
+
+.emz-top-bar-wrapper {
+    background-color: $emz-brown;
+}
+
+.top-bar-nav {
+    background-color: $emz-brown;
+    font-size: 1rem;
+    opacity: 1;
+    padding: .3125rem 0rem .3125rem 0rem;
+    text-align: center;
+}
+
+.top-bar-text {
+    color: $emz-light-brown;
+    justify-content: space-around;
+}
+
+.emz-top-bar {
+    font-size: .9375rem;
+    height: 1.5625rem;
+}
+
+.emz-top-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 0 .3rem;
+    color: $emz-light-brown;
+}
+
+@include media-breakpoint-up(xs) {
+    .top-bar.container {
+        padding-left: .625rem;
+        padding-right: .625rem;
+    }
+
+    .emz-top-bar-item.phone {
+        justify-items: start;
+    }
+
+    .emz-top-bar-item.service {
+        justify-items: end;
+    }
+
+    .emz-top-bar-item.delivery {
+        display: none;
+    }
+
+    .emz-top-bar-item.info {
+        display: none;
+    }
+
+    .emz-top-bar-item.new {
+        display: none;
+    }
+
+    .emz-top-bar-item.trending {
+        display: none;
+    }
+
+    .emz-top-bar-wrapper {
+        background-color: $emz-brown;
+        position: sticky;
+        z-index: 1;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .emz-top-bar-item.delivery {
+        display: flex;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .top-bar.container {
+        padding-left: 1.625rem;
+        padding-right: 1.625rem;
+    }
+
+    .emz-top-bar-wrapper {
+        padding: 0;
+    }
+
+    .top-bar-nav {
+        height: 2.1875rem;
+    }
+
+    .emz-top-bar-item.info {
+        display: flex;
+    }
+
+    .emz-top-bar-item.new {
+        display: flex;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .emz-top-bar-item.trending {
+        display: flex;
+    }
+}

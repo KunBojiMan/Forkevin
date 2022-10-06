@@ -1,0 +1,80 @@
+.container-main {
+    .breadcrumb-item + .breadcrumb-item::before &.span {
+        color: $emz-breadcrumb-color;
+        content: none;
+        font-size: 0.875rem;
+    }
+}
+
+.breadcrumb {
+    margin-bottom: 0rem;
+    &a,
+    span {
+        color: $emz-breadcrumb-color;
+        font-weight: bolder;
+        font: 0.875rem Oswald;
+    }
+}
+.breadcrumb a.is-active {
+    color: $emz-breadcrumb-color;
+    font-weight: bolder;
+    font: 0.875rem Oswald;
+}
+
+.breadcrumb a.is-active:active {
+    color: $emz-yellow;
+    font-weight: bolder;
+    font: 0.875rem Oswald;
+}
+
+.breadcrumb svg {
+    height: 0.875rem;
+    width: auto;
+    top: auto;
+}
+
+.content--breadcrumb .breadcrumb--list {
+    max-width: 1260px;
+    max-width: 78.75rem;
+    margin: 0 auto;
+}
+
+@include media-breakpoint-up(xs) {
+    .breadcrumb.cms-breadcrumb.container {
+        padding-right: 0.625rem;
+        padding-left: 0.625rem;
+        padding-bottom: 0rem;
+        margin-bottom: 0rem;
+
+        span.breadcrumb-title {
+            font-size: 0.75rem !important;
+            color: $emz-breadcrumb-color !important;
+            font-family: "Oswald", sans-serif;
+            font-weight: $emz-fontweight-regular;
+        }
+    }
+    .emz-nav-breadcrumb {
+        margin-top: 6.5rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .breadcrumb {
+        padding-top: 0rem;
+    }
+
+    .breadcrumb.cms-breadcrumb.container {
+        padding-left: 1.875rem;
+        padding-right: 1.25rem;
+        margin-bottom: 0;
+        color: $emz-breadcrumb-color;
+
+        span.breadcrumb-title {
+            font-size: 0.875rem !important;
+        }
+    }
+
+    .emz-nav-breadcrumb {
+        margin-top: 4.5rem;
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "zigarrenversand-theme": { 
+        "emz-top-bar": {
+            "delivery": "Versandkostenfrei ab 50 CHF",
+            "trending": "Aktionen",
+            "info": "Über uns",
+            "new": "Neue Produkte",
+            "phone": "Hotline 052. 624 26 00",
+            "service": "Service/Hilfe"
+        },
+        "emz-header" :{
+            "searchPlaceholder":"Suchbegriff..."
+        },
+        "emz-footer-icon-bar": {
+            "payment-in-advance":"VORKASSE",
+            "invoice": "RECHNUNG"
+        }
+
+    }
+}

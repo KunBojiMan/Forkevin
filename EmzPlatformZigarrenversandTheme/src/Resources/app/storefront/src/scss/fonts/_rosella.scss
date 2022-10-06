@@ -1,0 +1,11 @@
+/* rosella-regular - latin */
+@font-face {
+    font-family: 'Rosella W01 Solid';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+         url('#{$sw-asset-public-url}/bundles/emzplatformzigarrenversandtheme/font/Rosella/rosella-w01-solid.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('#{$sw-asset-public-url}/bundles/emzplatformzigarrenversandtheme/font/Rosella/rosella-w01-solid.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('#{$sw-asset-public-url}/bundles/emzplatformzigarrenversandtheme/font/Rosella/Rosella_W01_Solid.ttf') format('truetype');
+}

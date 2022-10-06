@@ -1,0 +1,19 @@
+{% sw_extends '@Storefront/storefront/layout/header/logo.html.twig' %}
+
+{% block layout_header_logo_inner %}
+      <div class="header-logo-main d-flex emz-header-logo-wrapper ">
+        {% block layout_header_logo_link %}
+            {{ parent() }}
+        {% endblock %}
+    </div>
+{% endblock %}
+
+
+{% block layout_header_logo_image_default %}
+    {% if theme_config('sw-logo-desktop') %}
+        <img src="{{ asset('bundles/EmzPlatformZigarrenversandTheme/zigarrenversand-logo-orange-quer.svg', 'asset') }}"
+             alt="{{ "header.logoLink"|trans|striptags }}"
+             class="img-fluid header-logo-main-img"/>
+    {% endif %}
+{% endblock %}
+    

@@ -1,0 +1,100 @@
+.nav-link.main-navigation-link {
+        padding-right: 0.5rem;
+        padding-left: .5rem;
+        display: flex;
+        justify-content: space-between;
+            &:hover {
+                border-bottom: .125rem solid $emz-yellow;
+            }
+}
+.nav-main {
+    background-color: $emz-white;
+    z-index: 1;
+    top: 5.625rem;
+    position: sticky;
+    transition: all;
+    border-bottom: 0.0625rem solid $emz-yellow;
+    justify-content: center;
+    display: flex;
+
+    .container-fluid.emz-nav-main {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .main-navigation-link .main-navigation-link-text {
+        color: $emz-anthracite;
+        border-bottom: 0rem;
+        padding-bottom: 0rem;
+        &:hover {
+            color: $emz-yellow;
+        }
+        &::after {
+            color: $emz-breadcrumb-color;
+        }
+    }
+
+    .main-navigation-link.isopen {
+        &:focus,
+        &:hover {
+            color: $emz-yellow;
+        }
+    }
+
+    .main-navigation-link.active .main-navigation-link-text {
+        border-color: $emz-white;
+    }
+
+    .nav-link.main-navigation-link.active {
+        color: $emz-yellow;
+        border-bottom: 0.125rem solid $emz-yellow;
+
+        &.home-link {
+            border-bottom: 0.125rem solid $emz-white;
+            color: $emz-yellow;
+        }
+        .icon.icon-EmzIcons.icon-EmzIcons-home {
+            color: $emz-yellow;
+        }
+    }
+
+    .nav.main-navigation-menu {
+        color: $emz-anthracite;
+        top: 0;
+        z-index: 2;
+        justify-content: center;
+
+        .layout-header-navigation {
+            background-color: $emz-white;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .main-navigation {
+        background-color: $emz-white;
+    }
+
+    .nav-main {
+        border-bottom: none;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .container {
+        padding: 0 0.6875rem;
+    }
+
+    .nav-main {
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+//
+.product-detail {
+    margin-top: 5rem;
+}

@@ -1,0 +1,38 @@
+.btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.3;
+    border-radius: 0;
+    align-items: center;
+    text-transform: uppercase;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-primary, .btn-secondary, .btn-block {
+    padding: .6094rem 1.3125rem;
+}
+
+.btn-primary, .btn-buy {
+    color: $emz-white;
+    &:hover {
+        color: $emz-white;
+        background-color: $emz-light-yellow;
+        border-color: $emz-light-yellow;
+    }
+}
+
+.btn-secondary {
+    color: $emz-white;
+    background-color: $emz-anthracite;
+    border-color: $emz-anthracite;
+
+    &:hover {
+        color: $emz-white;
+        background-color: $emz-grey-1;
+        border-color: $emz-grey-1;
+    }
+}

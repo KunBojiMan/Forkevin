@@ -1,0 +1,54 @@
+.emz-footer.wrapper {
+    background-color: $emz-white;
+    height: 7.5rem;
+}
+
+.col-lg-12.emz-payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon.icon-EmzIcons.icon-EmzIcons-visa {
+    width: auto;
+    height: auto;
+}
+.icon.icon-EmzIcons.icon-EmzIcons-mastercard {
+    width: auto;
+    height: auto;
+}
+.icon.icon-EmzIcons.icon-EmzIcons-american-express {
+    width: auto;
+    height: auto;
+}
+.icon.icon-EmzIcons.icon-EmzIcons-twint {
+    width: auto;
+    height: auto;
+}
+.icon.icon-EmzIcons.icon-EmzIcons-post-finance {
+    width: auto;
+    height: auto;
+}
+.icon.icon-EmzIcons.icon-EmzIcons-die-post {
+    width: auto;
+    height: auto;
+}
+
+.emz-footer-icon-item.text {
+    font-size: 0.751rem;
+    font-family: "Oswald";
+    font-weight: $emz-fontweight-bold;
+    display: flex;
+}
+
+@include media-breakpoint-up(lg) {
+    .container.emz-footer {
+        background-color: $emz-white;
+        display: flex;
+        height: 5.938rem;
+    }
+
+    .emz-footer-icon-item.text {
+        font-size: $emz-fontsize-1;
+    }
+}

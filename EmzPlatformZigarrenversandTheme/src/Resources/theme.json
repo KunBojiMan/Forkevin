@@ -1,0 +1,687 @@
+{
+    "name": "EmzPlatformZigarrenversandTheme",
+    "author": "8mylez GmbH",
+    "description": {
+        "en-GB": "Shopware 6 Theme for Zigarrenversand",
+        "de-DE": "Shopware 6 Theme für Zigarrenversand"
+    },
+    "previewMedia": "app/storefront/dist/assets/emzplatformzigarrenversandtheme_preview.png",
+    "views": [
+        "@Storefront",
+        "@Plugins",
+        "@EmzPlatformZigarrenversandTheme"
+    ],
+    "style": [
+        "app/storefront/src/scss/overrides.scss",
+        "@Storefront",
+        "app/storefront/src/scss/base.scss"
+    ],
+    "script": [
+        "@Storefront",
+        "app/storefront/dist/storefront/js/emz-platform-zigarrenversand-theme.js"
+    ],
+    "asset": [
+        "@Storefront",
+        "app/storefront/src/assets"
+    ],
+    "iconSets": {
+        "EmzIcons": "app/storefront/src/assets/icons/EmzIcons"
+    },
+    "config": {
+        "tabs": {
+            "emz-color-tab": {
+                "label": {
+                    "en-GB": "More Colors",
+                    "de-DE": "Weitere Farben"
+                }
+            },
+            "emz-typography-tab": {
+                "label": {
+                    "en-GB": "More Typography",
+                    "de-DE": "Weitere Typografie"
+                }
+            }
+        },
+        "blocks": {
+            "typography": {
+                "label": {
+                    "en-GB": "Typography",
+                    "de-DE": "Typografie"
+                }
+            },
+            "font-sizes": {
+                "label": {
+                    "en-GB": "Fontsizes",
+                    "de-DE": "Schriftgrößen"
+                }
+            },
+            "font-weights": {
+                "label": {
+                    "en-GB": "Fontweights",
+                    "de-DE": "Schriftgewichte"
+                }
+            }
+        },
+        "fields": {
+            "emz-fontweight-light": {
+                "label": {
+                    "en-GB": "Font-weight: Light",
+                    "de-DE": "Font-weight: Light"
+                },
+                "type": "fontWeight",
+                "value": 300,
+                "editable": true,
+                "tab": "emz-typography-tab",
+                "block": "font-weights"
+            },
+            "emz-fontweight-regular": {
+                "label": {
+                    "en-GB": "Font-weight: Regular",
+                    "de-DE": "Font-weight: Regular"
+                },
+                "type": "number",
+                "value": 400,
+                "editable": true,
+                "tab": "emz-typography-tab",
+                "block": "font-weights"
+            },
+            "emz-fontweight-bold": {
+                "label": {
+                    "en-GB": "Font-weight: Bold",
+                    "de-DE": "Font-weight: Bold"
+                },
+                "type": "number",
+                "value": 700,
+                "editable": true,
+                "tab": "emz-typography-tab",
+                "block": "font-weights"
+            },
+            "emz-fontsize-1": {
+                "label": {
+                    "en-GB": "Font-size 1",
+                    "de-DE": "Font-size 1"
+                },
+                "type": "fontSize",
+                "value": "1.375rem",
+                "tab": "emz-typography-tab",
+                "block": "font-sizes"
+            },
+            "emz-fontsize-2": {
+                "label": {
+                    "en-GB": "Font-size 2",
+                    "de-DE": "Font-size 2"
+                },
+                "type": "fontSize",
+                "value": "1.125rem",
+                "tab": "emz-typography-tab",
+                "block": "font-sizes"
+            },
+            "emz-fontsize-3": {
+                "label": {
+                    "en-GB": "Font-size 3",
+                    "de-DE": "Font-size 3"
+                },
+                "type": "fontSize",
+                "value": "1rem",
+                "tab": "emz-typography-tab",
+                "block": "font-sizes"
+            },
+            "emz-fontsize-4": {
+                "label": {
+                    "en-GB": "Font-size 4",
+                    "de-DE": "Font-size 4"
+                },
+                "type": "fontSize",
+                "value": "0.875rem",
+                "tab": "emz-typography-tab",
+                "block": "font-sizes"
+            },
+            "sw-color-brand-primary": {
+                "label": {
+                    "en-GB": "Primary Color",
+                    "de-DE": "Primärfarbe"
+                },
+                "type": "color",
+                "value": "#f6a14d",
+                "editable": true,
+                "block": "themeColors",
+                "order": 100
+            },
+            "sw-color-brand-secondary": {
+                "label": {
+                    "en-GB": "Secondary Color",
+                    "de-DE": "Sekundärfarbe"
+                },
+                "type": "color",
+                "value": "#fcc084",
+                "editable": true,
+                "block": "themeColors",
+                "order": 200
+            },
+            "emz-yellow": {
+                "label": {
+                    "en-GB": "Yellow",
+                    "de-DE": "Gelb"
+                },
+                "type": "color",
+                "value": "#f6a14d",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },
+            "emz-light-yellow": {
+                "label": {
+                    "en-GB": "Light Yellow",
+                    "de-DE": "Hellgelb 2"
+                },
+                "type": "color",
+                "value": "#fcc084",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },
+            "emz-brown": {
+                "label": {
+                    "en-GB": "Brown",
+                    "de-DE": "Braun"
+                },
+                "type": "color",
+                "value": "#625444",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },
+            "emz-light-brown": {
+                "label": {
+                    "en-GB": "Light Brown",
+                    "de-DE": "Hellbraun"
+                },
+                "type": "color",
+                "value": "#c7c2bd",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },
+            "emz-anthracite": {
+                "label": {
+                    "en-GB": "Anthracite",
+                    "de-DE": "Anthrazit"
+                },
+                "type": "color",
+                "value": "#35383f",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },
+            "emz-grey-1": {
+                "label": {
+                    "en-GB": "Grey 1",
+                    "de-DE": "Grau 1"
+                },
+                "type": "color",
+                "value": "#8a8a8a",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },
+            "emz-grey-2": {
+                "label": {
+                    "en-GB": "Grey 2",
+                    "de-DE": "Grau 2"
+                },
+                "type": "color",
+                "value": "#e0e0e0",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },
+            "emz-grey-3": {
+                "label": {
+                    "en-GB": "Grey 3",
+                    "de-DE": "Grau 3"
+                },
+                "type": "color",
+                "value": "#f7f7f7",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },
+            "emz-white": {
+                "label": {
+                    "en-GB": "White",
+                    "de-DE": "Weiß"
+                },
+                "type": "color",
+                "value": "#ffffff",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },
+            "emz-red": {
+                "label": {
+                    "en-GB": "Red",
+                    "de-DE": "Rot"
+                },
+                "type": "color",
+                "value": "#ed6a59",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },
+            "emz-green": {
+                "label": {
+                    "en-GB": "Green",
+                    "de-DE": "Grün"
+                },
+                "type": "color",
+                "value": "#6ab176",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },
+            "emz-blue": {
+                "label": {
+                    "en-GB": "Blue",
+                    "de-DE": "Blau"
+                },
+                "type": "color",
+                "value": "#86abcc",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },"emz-breadcrumb-color": {
+                "label": {
+                    "en-GB": "breadcrumb-grey",
+                    "de-DE": "breadcrumbs-grey"
+                },
+                "type": "color",
+                "value": "#929292",
+                "editable": true,
+                "tab": "emz-color-tab"
+            },
+            "sw-color-success": {
+                "label": {
+                    "en-GB": "Success",
+                    "de-DE": "Erfolg"
+                },
+                "type": "color",
+                "value": "#6ab176",
+                "editable": true,
+                "block": "statusColors",
+                "order": 100
+                },
+            "sw-color-info": {
+                "label": {
+                    "en-GB": "Information",
+                    "de-DE": "Information"
+                },
+                "type": "color",
+                "value": "#86abcc",
+                "editable": true,
+                "block": "statusColors",
+                "order": 200
+                },
+            "sw-color-warning": {
+                "label": {
+                    "en-GB": "Notice",
+                    "de-DE": "Hinweis"
+                },
+                "type": "color",
+                "value": "#fcc084",
+                "editable": true,
+                "block": "statusColors",
+                "order": 300
+                },
+            "sw-color-danger": {
+                "label": {
+                    "en-GB": "Error",
+                    "de-DE": "Fehler"
+                },
+                "type": "color",
+                "value": "#ed6a59",
+                "editable": true,
+                "block": "statusColors",
+                "order": 400
+                },
+            "sw-font-family-base": {
+                "label": {
+                    "en-GB": "Fonttype text",
+                    "de-DE": "Schriftart Text"
+                },
+                "type": "fontFamily",
+                "value": "'Oswald', sans-serif",
+                "editable": true,
+                "block": "typography",
+                "order": 100
+                },
+            "sw-text-color": {
+                "label": {
+                    "en-GB": "Text color",
+                    "de-DE": "Textfarbe"
+                },
+                "type": "color",
+                "value": "#000",
+                "editable": true,
+                "block": "typography",
+                "order": 200
+                },
+            "sw-font-family-headline": {
+                "label": {
+                    "en-GB": "Fonttype headline",
+                    "de-DE": "Schriftart Überschrift"
+                },
+                "type": "fontFamily",
+                "value": "'Rosella W01 Solid', sans-serif",
+                "editable": true,
+                "block": "typography",
+                "order": 300
+                },
+            "sw-headline-color": {
+                "label": {
+                    "en-GB": "Headline color",
+                    "de-DE": "Überschriftfarbe"
+                },
+                "type": "color",
+                "value": "#000",
+                "editable": true,
+                "block": "typography",
+                "order": 400
+            },
+            "sw-color-price": {
+                "label": {
+                    "en-GB": "Price",
+                    "de-DE": "Preis"
+                },
+                "type": "color",
+                "value": "#35383f",
+                "editable": true,
+                "block": "eCommerce",
+                "order": 100
+            },
+            "sw-color-buy-button": {
+                "label": {
+                    "en-GB": "Buy button",
+                    "de-DE": "Kaufen-Button"
+                },
+                "type": "color",
+                "value": "#f6a14d",
+                "editable": true,
+                "block": "eCommerce",
+                "order": 200
+            },
+            "sw-color-buy-button-text": {
+                "label": {
+                    "en-GB": "Buy button text",
+                    "de-DE": "Kaufen-Button Text"
+                },
+                "type": "color",
+                "value": "#ffffff",
+                "editable": true,
+                "block": "eCommerce",
+                "order": 300
+            },
+            "sw-logo-desktop": {
+                "label": {
+                    "en-GB": "Desktop",
+                    "de-DE": "Desktop"
+                },
+                "helpText": {
+                    "en-GB": "Displayed for viewports of above 991px",
+                    "de-DE": "Wird über einem Viewport von 991px angezeigt"
+                },
+                "type": "media",
+                "value": "app/storefront/dist/assets/logo/zigarrenversand-logo-orange-quer.svg",
+                "editable": true,
+                "block": "media",
+                "order": 100,
+                "fullWidth": true
+            },
+            "sw-logo-tablet": {
+                "label": {
+                    "en-GB": "Tablet",
+                    "de-DE": "Tablet"
+                },
+                "helpText": {
+                    "en-GB": "Displayed between a viewport of 767px to 991px",
+                    "de-DE": "Wird zwischen einem viewport von 767px bis 991px angezeigt"
+                },
+                "type": "media",
+                "value": "app/storefront/dist/assets/logo/zigarrenversand-logo-orange-quer.svg",
+                "editable": true,
+                "block": "media",
+                "order": 200,
+                "fullWidth": true
+            },
+            "sw-logo-mobile": {
+                "label": {
+                    "en-GB": "Mobile",
+                    "de-DE": "Mobil"
+                },
+                "helpText": {
+                    "en-GB": "Displayed up to a viewport of 767px",
+                    "de-DE": "Wird bis zu einem Viewport von 767px angezeigt"
+                },
+                "type": "media",
+                "value": "app/storefront/dist/assets/logo/zigarrenversand-logo-orange-quer.svg",
+                "editable": true,
+                "block": "media",
+                "order": 300,
+                "fullWidth": true
+            },  
+            "sw-logo-share": {
+                "label": {
+                    "en-GB": "App & share icon",
+                    "de-DE": "App- & Share-Icon"
+                },
+                "type": "media",
+                "value": "app/storefront/dist/assets/logo/zigarrenversand-favicon.jpeg",
+                "editable": true,
+                "block": "media",
+                "order": 400
+                },
+                "sw-logo-favicon": {
+                "label": {
+                    "en-GB": "Favicon",
+                    "de-DE": "Favicon"
+                },
+                "type": "media",
+                "value": "app/storefront/dist/assets/logo/zigarrenversand-favicon.jpeg",
+                "editable": true,
+                "block": "media",
+                "order": 500
+                },
+                "footer-icon": {
+                    "label": {
+                      "en-GB": "icons at the bootem",
+                      "de-DE": "Icons im footer"
+                  },
+                    "type": "media",
+                    "value": "",
+                    "scss": false,
+                    "editable": true,
+                    "block": "FooterBlock",
+                    "section": "FooterIcons"
+                },
+                "footer-icon-visa": {
+                    "label": {
+                      "en-GB": "icons at the bootem",
+                      "de-DE": "Icons im footer"
+                  },
+                    "type": "media",
+                    "value": "",
+                    "scss": false,
+                    "editable": true,
+                    "block": "TopBarBlock",
+                    "section": "TopBarIcons"
+                },
+                "footer-icon-mastercard": {
+                    "label": {
+                        "en-GB": "icons at the bootem",
+                        "de-DE": "Icons im footer"
+                  },
+                    "type": "media",
+                    "value": "",
+                    "scss": false,
+                    "editable": true,
+                    "block": "TopBarBlock",
+                    "section": "TopBarIcons"
+                },
+                "footer-icon-american-express": {
+                    "label": {
+                        "en-GB": "icons at the bootem",
+                        "de-DE": "Icons im footer"
+                  },
+                    "type": "media",
+                    "value": "",
+                    "scss": false,
+                    "editable": true,
+                    "block": "FooterBlock",
+                    "section": "FooterIcons"
+                },
+                "footer-icon-rechnung": {
+                    "label": {
+                        "en-GB": "icons at the bootem",
+                        "de-DE": "Icons im footer"
+                  },
+                    "type": "media",
+                    "value": "",
+                    "scss": false,
+                    "editable": true,
+                    "block": "FooterBlock",
+                    "section": "FooterIcons"
+                },
+                "footer-twint": {
+                    "label": {
+                        "en-GB": "icons at the bootem",
+                        "de-DE": "Icons im footer"
+                  },
+                    "type": "media",
+                    "value": "",
+                    "scss": false,
+                    "editable": true,
+                    "block": "FooterBlock",
+                    "section": "FooterIcons"
+                },
+                "footer-post-finance": {
+                    "label": {
+                        "en-GB": "icons at the bootem",
+                        "de-DE": "Icons im footer"
+                  },
+                    "type": "media",
+                    "value": "",
+                    "scss": false,
+                    "editable": true,
+                    "block": "FooterBlock",
+                    "section": "FooterIcons"
+                },
+                "footer-icon-die-post": {
+                    "label": {
+                        "en-GB": "icons at the bootem",
+                        "de-DE": "Icons im footer"
+                  },
+                    "type": "media",
+                    "value": "",
+                    "scss": false,
+                    "editable": true,
+                    "block": "FooterBlock",
+                    "section": "FooterIcons"
+                },
+                "footer-icon-facebook": {
+                    "label": {
+                        "en-GB": "icons at the bootem",
+                        "de-DE": "Icons im footer"
+                  },
+                    "type": "media",
+                    "value": "",
+                    "scss": false,
+                    "editable": true,
+                    "block": "FooterBlock",
+                    "section": "FooterIcons"
+                },
+                "footer-icon-instagram": {
+                    "label": {
+                        "en-GB": "icons at the bootem",
+                        "de-DE": "Icons im footer"
+                  },
+                    "type": "media",
+                    "value": "",
+                    "scss": false,
+                    "editable": true,
+                    "block": "FooterBlock",
+                    "section": "FooterIcons"
+                },
+                "footer-icon-twitter": {
+                    "label": {
+                        "en-GB": "icons at the bootem",
+                        "de-DE": "Icons im footer"
+                  },
+                    "type": "media",
+                    "value": "",
+                    "scss": false,
+                    "editable": true,
+                    "block": "FooterBlock",
+                    "section": "FooterIcons"
+                },
+                "delivery-icon-one": {
+                  "label": {
+                    "en-GB": "first Icon",
+                    "de-DE": "erstes Icon"
+                  },
+                  "type": "media",
+                  "value": "",
+                  "scss": false,
+                  "editable": true,
+                  "block": "TopBarBlock",
+                  "section": "TopBarIcons"
+                },
+                "trending-icon-two": {
+                  "label": {
+                    "en-GB": "second Icon",
+                    "de-DE": "zweites Icon"
+                  },
+                  "type": "media",
+                  "value": "",
+                  "scss": false,
+                  "editable": true,
+                  "block": "TopBarBlock",
+                  "section": "TopBarIcons"
+                },
+                "info-icon-three": {
+                  "label": {
+                    "en-GB": "third Icon",
+                    "de-DE": "drittes Icon"
+                  },
+                  "type": "media",
+                  "value": "",
+                  "scss": false,
+                  "editable": true,
+                  "block": "TopBarBlock",
+                  "section": "TopBarIcons"
+                },
+                "new-icon-four": {
+                  "label": {
+                    "en-GB": "fourth Icon",
+                    "de-DE": "viertes Icon"
+                  },
+                  "type": "media",
+                  "value": "",
+                  "scss": false,
+                  "editable": true,
+                  "block": "TopBarBlock",
+                  "section": "TopBarIcons"
+                },
+                "phone-icon-five": {
+                  "label": {
+                    "en-GB": "fifth Icon",
+                    "de-DE": "fünftes Icon"
+                  },
+                  "type": "media",
+                  "value": "",
+                  "scss": false,
+                  "editable": true,
+                  "block": "TopBarBlock",
+                  "section": "TopBarIcons"
+                },
+                "service-icon-six": {
+                  "label": {
+                    "en-GB": "sixth Icon",
+                    "de-DE": "sextes Icon"
+                  },
+                  "type": "media",
+                  "value": "",
+                  "scss": false,
+                  "editable": true,
+                  "block": "TopBarBlock",
+                  "section": "TopBarIcons"
+                }                                                                           
+        }               
+    }    
+}    

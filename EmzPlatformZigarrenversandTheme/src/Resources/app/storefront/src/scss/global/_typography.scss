@@ -1,0 +1,81 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2;
+}
+
+h1 {
+    font-family: 'Rosella W01 Solid';
+    font-size: 3.125rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.0063rem;
+}
+
+h2 {
+    font-family: 'Rosella W01 Solid';
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.0375rem;
+}
+
+h3 {
+    font-family: 'Rosella W01 Solid';
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: .025rem;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+// Headerstyling
+
+.top-bar-text.hotline-text {
+    color: $emz-light-brown;
+    font-family: 'Oswald';
+    font-weight: $emz-fontweight-bold;
+
+}
+.main-navigation-link {
+    font-family: 'Oswald';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+}
+.emz-text-nav{
+    font-size: 1.125rem;
+    font-family: 'Oswald';
+    font-weight: $emz-fontweight-regular;
+}
+
+.emz-top-bar-item {
+    font-size: .875rem;
+    font-family: 'Oswald';
+    font-weight: $emz-fontweight-regular;
+}
+
+// breadcrumbstyling
+
+.breadcrumb-title & .breadcrumb-item{
+    font-size: .875rem;
+    font-family: "Oswald", sans-serif;
+}
+
+// Footerstyling
+
+
+
+p, span, li, label {
+    font-family: 'emz-fontweight-regular';
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
+}
